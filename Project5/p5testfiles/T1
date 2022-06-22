@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo
+echo RMB 0.001152797993
+echo
+
+python3 ./$1 11 7000

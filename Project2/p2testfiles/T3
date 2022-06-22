@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cat > tempin <<EOF
+    SET   ABC  22
+    IF 11 < ABC L0
+    PRINTLOC
+    HALT
+L0  XMOVE 10
+L1  YMOVE 10  # cmnt
+    YMOVE 20
+    YMOVE 20
+    PRINTLOC
+    HALT
+EOF
+
+python3.7 ./$1 tempin 
+
+echo
+echo "RMB: " 'error: move off board'
+
+rm -f tempin
