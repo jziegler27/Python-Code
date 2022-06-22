@@ -1,3 +1,5 @@
+#This code runs with the .so file in the repository. It takes in a function, and a struct pointer in C code, and uses it in a python program to speed up processing
+#time using the cffi library. You can run using ./T1 py_p5.py  
 import sys, random
 seed = int(sys.argv[1])
 number_points = int(sys.argv[2])
