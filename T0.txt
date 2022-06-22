@@ -1,8 +1,0 @@
-    YMOVE 10              # along y-axis
-    SET VARMOV 0          # sets VARMOVE to 0
-L1  ADD VARMOV 1          # adds 1 to VARMOVE
-    xmove 1               # along x-axis
-    IF varmov < 8 L1
-    YMOVE -3
-    PRINTLOC
-    HALT
